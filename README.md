@@ -15,6 +15,18 @@
 3. 将生成的规则文件导入纸鸢磁力的【磁力规则配置】。
 4. 导入成功后，纸鸢磁力即可支持你自定义站点的磁力搜索。
 
+## MCP 搜索与操作 Skill
+
+路径：[`skills/magnet-mcp`](./skills/magnet-mcp)
+
+给希望用 Agent（Claude Code、Codex、Cursor 等）直接搜索、预览、管理纸鸢磁力收藏的用户。能力通过官网 MCP 提供，不经过本仓库。
+
+**使用方法：**
+
+1. 打开 [纸鸢磁力 MCP 页](https://magnet.kiteyuan.info/mcp) 并登录，生成 MCP Token。
+2. 将 `skills/magnet-mcp` 交给 Agent，并按 Skill 说明把 Token 配进 MCP 客户端（入口 `https://magnet.kiteyuan.info/api/v1/mcp`）。
+3. 即可让 Agent 调用搜索、预览、文件结构、收藏合集与分享等工具。
+
 ---
 
 #### 一、磁力规则
