@@ -2,15 +2,11 @@
 
 > 纸鸢磁力只负责读取用户自定义的引擎站点并执行请求返回，不提供任何资源存储和查询服务，查询到的结果内容只取决于用户编写的自定义规则和站点数据，任何数据均不经过服务器。（工具内的任何服务均为公网已有服务二次封装而成）
 
-## 仓库说明
+## 自定义引擎规则 Skill
 
-| 内容 | 路径 |
-|------|------|
-| Skill | [`skills/magnet-engine-rules/SKILL.md`](./skills/magnet-engine-rules/SKILL.md) |
-| 字段说明 | [`skills/magnet-engine-rules/reference.md`](./skills/magnet-engine-rules/reference.md) |
-| 样例 | [`skills/magnet-engine-rules/examples/`](./skills/magnet-engine-rules/examples/) |
+路径：[`skills/magnet-engine-rules`](./skills/magnet-engine-rules)
 
-写规则时让 AI 先读 Skill，对照 reference，需要结构参考时看 examples。
+给需要自己写 / 改磁力搜索引擎规则的用户：把目录交给 Claude Code、Codex、Cursor 等 AI，即可根据搜索页 URL 或 curl 自动分析页面、生成可导入的 `regulars.json`（含 `stepConfig`、排序分页、二跳取磁链等），并按文档做基础校验。
 
 ---
 
