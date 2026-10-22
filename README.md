@@ -4,29 +4,19 @@
 
 ## 仓库说明
 
-本仓库是 **产品介绍** 与 **磁力引擎规则编写指南**（Agent Skill 格式，不绑定某一 IDE）。
-
 | 内容 | 路径 |
 |------|------|
-| 规则 Skill 入口 | [`skills/magnet-engine-rules/SKILL.md`](./skills/magnet-engine-rules/SKILL.md) |
-| 字段详解 | [`skills/magnet-engine-rules/reference.md`](./skills/magnet-engine-rules/reference.md) |
-| JSON 样例 | [`skills/magnet-engine-rules/examples/`](./skills/magnet-engine-rules/examples/) |
+| Skill | [`skills/magnet-engine-rules/SKILL.md`](./skills/magnet-engine-rules/SKILL.md) |
+| 字段说明 | [`skills/magnet-engine-rules/reference.md`](./skills/magnet-engine-rules/reference.md) |
+| 样例 | [`skills/magnet-engine-rules/examples/`](./skills/magnet-engine-rules/examples/) |
 
-### 给 AI 助手用（通用）
-
-`SKILL.md` + `reference.md` + `examples/` 是任意编程向 AI（Claude Code、Codex、Cursor、Copilot Chat 等）都能直接读的 Markdown / JSON，**不要求**专用插件。
-
-1. 把本仓库 clone 或只下载 `skills/magnet-engine-rules/` 目录。
-2. 在对话里让 AI **先读** `SKILL.md`，写规则时对照 `reference.md`，结构不确定时看 `examples/`。
-3. 若你的工具支持「项目知识 / 规则文件」，把上述目录加入上下文或 `@` 引用即可。
-
-部分工具的可选快捷方式（非必须）：Cursor 可复制到 `~/.cursor/skills/magnet-engine-rules/`；其他产品按各自「自定义指令 / AGENTS.md / skills」目录放置同一文件夹即可。
+写规则时让 AI 先读 Skill，对照 reference，需要结构参考时看 examples。
 
 ---
 
 #### 一、磁力规则
 
-首次使用需配置规则（手动导入 / 云导入）。移动端入口：**【个人】→【磁力规则配置】**。编写规则时可让 AI 阅读本仓库 [Skill 入口](./skills/magnet-engine-rules/SKILL.md) 与 [字段说明](./skills/magnet-engine-rules/reference.md)。
+首次使用需配置规则（手动导入 / 云导入）。移动端入口：**【个人】→【磁力规则配置】**。
 <img width="1280" height="648" alt="image" src="https://github.com/user-attachments/assets/32951dfa-9399-4b9c-8635-5f154dab7336" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/adf5bdb6-98df-49a0-834a-65134a68438b" />
 
