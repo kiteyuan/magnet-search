@@ -1,6 +1,21 @@
-纸鸢磁力是一款致力于用户极致搜索体验的磁力聚合工具，工具引擎通过自定义规则的磁力引擎搜索（均来自国内公网服务）清洗出最佳结果列表，同时提供磁力解析和文件预览图功能，为用户搜索时大大减少垃圾文件的转存风险。用户可自定义编写规则导入自用的引擎站点，纸鸢磁力从而负责并发搜索和返回，快速搜索全网海量资源。
+<div align="center">
 
-> 纸鸢磁力只负责读取用户自定义的引擎站点并执行请求返回，不提供任何资源存储和查询服务，查询到的结果内容只取决于用户编写的自定义规则和站点数据，任何数据均不经过服务器。（工具内的任何服务均为公网已有服务二次封装而成）
+<img src="./favicon.ico" width="72" height="72" alt="纸鸢磁力" />
+
+# 纸鸢磁力
+
+**聚合搜索 · 规则自定义 · Agent / MCP 可接入**
+
+[![Website](https://img.shields.io/badge/Website-kiteyuan.info-0ea5e9?style=flat-square)](https://kiteyuan.info/)
+[![Web App](https://img.shields.io/badge/Web-magnet.kiteyuan.info-22c55e?style=flat-square)](https://magnet.kiteyuan.info/)
+[![MCP](https://img.shields.io/badge/MCP-接入文档页-a855f7?style=flat-square)](https://magnet.kiteyuan.info/mcp)
+[![Stars](https://img.shields.io/github/stars/kiteyuan/magnet-search?style=flat-square)](https://github.com/kiteyuan/magnet-search)
+
+</div>
+
+纸鸢磁力是一款致力于用户极致搜索体验的磁力聚合工具：通过自定义规则对接公网搜索引擎，清洗结果列表，并提供磁力解析与文件预览，降低转存垃圾文件的风险。用户可自行编写并导入引擎站点，由纸鸢并发搜索并返回结果。
+
+> 纸鸢磁力只负责读取用户自定义的引擎站点并执行请求返回，不提供任何资源存储和查询服务。结果取决于你配置的规则与站点数据；工具内能力均为公网已有服务的二次封装。
 
 ## 自定义引擎规则 Skill
 
