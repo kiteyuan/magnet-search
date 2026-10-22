@@ -7,7 +7,8 @@
 **聚合搜索 · 规则自定义 · Agent / MCP 可接入**
 
 [![Website](https://img.shields.io/badge/Website-kiteyuan.info-0ea5e9?style=flat-square)](https://kiteyuan.info/)
-[![Web App](https://img.shields.io/badge/Web-magnet.kiteyuan.info-22c55e?style=flat-square)](https://magnet.kiteyuan.info/)
+[![Web](https://img.shields.io/badge/Web-magnet.kiteyuan.info-22c55e?style=flat-square)](https://magnet.kiteyuan.info/)
+[![Client](https://img.shields.io/badge/Client-cilisou.kiteyuan.info-f59e0b?style=flat-square)](https://cilisou.kiteyuan.info/)
 [![MCP](https://img.shields.io/badge/MCP-接入文档页-a855f7?style=flat-square)](https://magnet.kiteyuan.info/mcp)
 [![Stars](https://img.shields.io/github/stars/kiteyuan/magnet-search?style=flat-square)](https://github.com/kiteyuan/magnet-search)
 
