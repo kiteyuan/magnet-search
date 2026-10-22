@@ -6,7 +6,14 @@
 
 路径：[`skills/magnet-engine-rules`](./skills/magnet-engine-rules)
 
-给需要自己写 / 改磁力搜索引擎规则的用户：把目录交给 Claude Code、Codex、Cursor 等 AI，即可根据搜索页 URL 或 curl 自动分析页面、生成可导入的 `regulars.json`（含 `stepConfig`、排序分页、二跳取磁链等），并按文档做基础校验。
+给需要自己写 / 改磁力搜索引擎规则的用户。
+
+**使用方法：**
+
+1. 将 `skills/magnet-engine-rules` 目录下载到本地，交给你的 Agent（Claude Code、Codex、Cursor 等）。
+2. 把平时常用的磁力搜索站点地址（或搜索页 URL / curl）发给 Agent，它会按 Skill 分析页面并编写规则。
+3. 将生成的规则文件导入纸鸢磁力的【磁力规则配置】。
+4. 导入成功后，纸鸢磁力即可支持你自定义站点的磁力搜索。
 
 ---
 
