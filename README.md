@@ -23,30 +23,31 @@
 
 或在对话中 `@skills/magnet-engine-rules/SKILL.md`（若已放在当前工作区）。
 
-桌面 / Android 客户端在 [kiteyuan-search](https://github.com/kiteyuan/kiteyuan-search) 的 `desktop/` 目录本地构建，不在此仓库发版。
+桌面 / Android 安装包见 [纸鸢发布页](https://kiteyuan.info/) 或微信公众号，**不在本仓库**发布源码或安装包。
 
 ---
 
-一、磁力规则
-首次使用工具需要配置规则，可手动导入和云导入，导入成功后即可开始搜索（移动端入口：【个人】-【磁力规则配置】）。用户可借助Claude Code、Codex、Cursor等相关AI编程工具编写自定义规则，相关的Skill和规则示例模板地址：配置自定义规则教程和Agent Skill文档
+#### 一、磁力规则
+
+首次使用需配置规则（手动导入 / 云导入）。移动端入口：**【个人】→【磁力规则配置】**。可用 Claude Code、Codex、Cursor 等配合本仓库 [引擎规则 Skill](./skills/magnet-engine-rules/SKILL.md) 与 [字段说明](./skills/magnet-engine-rules/reference.md) 编写规则。
 <img width="1280" height="648" alt="image" src="https://github.com/user-attachments/assets/32951dfa-9399-4b9c-8635-5f154dab7336" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/adf5bdb6-98df-49a0-834a-65134a68438b" />
 
-二、磁力搜索
+#### 二、磁力搜索
 引擎规则配置完成后，即可进行资源搜索，除了搜索结果列表，工具还提供额外的预览和查看文件结构等附加功能。
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/88a16e72-3183-4de3-a4ed-72931dc3b069" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/653ea0d1-92aa-481c-b407-564bb7142016" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/64b8f2ee-db26-4aa7-8a24-25c07aa9468d" />
 
-三、磁力解析
+#### 三、磁力解析
 用户可键入任意磁力链接，自动解析出相关预览图和文件结构信息。（移动端入口：底部菜单第三个功能页面）
 <img width="1280" height="648" alt="image" src="https://github.com/user-attachments/assets/c314b14f-1819-4c6d-b36d-5b45b4ee075d" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/654c324c-0fe8-4269-af73-c5b9716b4478" />
 
-四、我的收藏
+#### 四、我的收藏
 账号登录状态下，用户可以将收藏合集进行外部分享链接/RSS订阅。
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/ba7acb1c-4a4d-4e47-b945-0ea19fc8c646" />
 
-五、帖子广场
+#### 五、帖子广场
 账号登录状态下，用户可以发布文章帖子。
 <img width="1280" height="648" alt="image" src="https://github.com/user-attachments/assets/b322832e-fb08-4fd2-ab9f-83b3e26a083a" />

@@ -27,6 +27,6 @@ description: >-
 - `engineName` 不与用户已有引擎重名。
 - 能列表直出磁链则**不要**滥用 `nextStep`。
 
-## 实现参考（维护者）
+## 运行时行为（摘要）
 
-规则由服务端 `spider.go` 执行：占位符 `%SearchKey%` / `%Page%` / `%Offset%`，相对 URL 拼到 `engineUrl`，`attr:href` 转绝对链接。
+占位符 `%SearchKey%` / `%Page%` / `%Offset%` 会在请求前替换；相对 URL 拼到 `engineUrl`；HTML 的 `attr:href` 会转为绝对链接。
