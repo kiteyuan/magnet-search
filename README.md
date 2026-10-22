@@ -2,34 +2,31 @@
 
 > 纸鸢磁力只负责读取用户自定义的引擎站点并执行请求返回，不提供任何资源存储和查询服务，查询到的结果内容只取决于用户编写的自定义规则和站点数据，任何数据均不经过服务器。（工具内的任何服务均为公网已有服务二次封装而成）
 
-工具地址：[纸鸢发布页](https://kiteyuan.info/) · [网页版 1](https://magnet.kiteyuan.info/) · [网页版 2](https://search.kiteyuan.info/) · [纸鸢下载内测](https://mybt.kiteyuan.info/) · APP：微信公众号【纸鸢花的小屋】回复【纸鸢磁力】【纸鸢下载】【纸鸢下载内测码】
-
 ## 仓库说明
 
-本仓库是 **产品说明 + Agent Skill（写引擎规则）**，不再包含桌面客户端源码与 GitHub Actions 打包。
+本仓库是 **产品介绍** 与 **磁力引擎规则编写指南**（Agent Skill 格式，不绑定某一 IDE）。
 
 | 内容 | 路径 |
 |------|------|
-| Cursor / Agent Skill（推荐） | [`skills/magnet-engine-rules/`](./skills/magnet-engine-rules/) |
-| 规则字段详解 | [`skills/magnet-engine-rules/reference.md`](./skills/magnet-engine-rules/reference.md) |
-| 完整规则样例 | [`skills/magnet-engine-rules/examples/`](./skills/magnet-engine-rules/examples/) |
+| 规则 Skill 入口 | [`skills/magnet-engine-rules/SKILL.md`](./skills/magnet-engine-rules/SKILL.md) |
+| 字段详解 | [`skills/magnet-engine-rules/reference.md`](./skills/magnet-engine-rules/reference.md) |
+| JSON 样例 | [`skills/magnet-engine-rules/examples/`](./skills/magnet-engine-rules/examples/) |
 
-### 安装 Skill（Cursor）
+### 给 AI 助手用（通用）
 
-将 `skills/magnet-engine-rules` 复制到：
+`SKILL.md` + `reference.md` + `examples/` 是任意编程向 AI（Claude Code、Codex、Cursor、Copilot Chat 等）都能直接读的 Markdown / JSON，**不要求**专用插件。
 
-- **个人**：`~/.cursor/skills/magnet-engine-rules/`
-- **项目**：`<你的仓库>/.cursor/skills/magnet-engine-rules/`
+1. 把本仓库 clone 或只下载 `skills/magnet-engine-rules/` 目录。
+2. 在对话里让 AI **先读** `SKILL.md`，写规则时对照 `reference.md`，结构不确定时看 `examples/`。
+3. 若你的工具支持「项目知识 / 规则文件」，把上述目录加入上下文或 `@` 引用即可。
 
-或在对话中 `@skills/magnet-engine-rules/SKILL.md`（若已放在当前工作区）。
-
-桌面 / Android 安装包见 [纸鸢发布页](https://kiteyuan.info/) 或微信公众号，**不在本仓库**发布源码或安装包。
+部分工具的可选快捷方式（非必须）：Cursor 可复制到 `~/.cursor/skills/magnet-engine-rules/`；其他产品按各自「自定义指令 / AGENTS.md / skills」目录放置同一文件夹即可。
 
 ---
 
 #### 一、磁力规则
 
-首次使用需配置规则（手动导入 / 云导入）。移动端入口：**【个人】→【磁力规则配置】**。可用 Claude Code、Codex、Cursor 等配合本仓库 [引擎规则 Skill](./skills/magnet-engine-rules/SKILL.md) 与 [字段说明](./skills/magnet-engine-rules/reference.md) 编写规则。
+首次使用需配置规则（手动导入 / 云导入）。移动端入口：**【个人】→【磁力规则配置】**。编写规则时可让 AI 阅读本仓库 [Skill 入口](./skills/magnet-engine-rules/SKILL.md) 与 [字段说明](./skills/magnet-engine-rules/reference.md)。
 <img width="1280" height="648" alt="image" src="https://github.com/user-attachments/assets/32951dfa-9399-4b9c-8635-5f154dab7336" />
 <img width="1280" height="649" alt="image" src="https://github.com/user-attachments/assets/adf5bdb6-98df-49a0-834a-65134a68438b" />
 
