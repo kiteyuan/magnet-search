@@ -1,22 +1,13 @@
 # regulars.json 规则结构说明与 AI 自动生成指南
 
-本文档用于让任意 AI 在拿到“一个搜索链接（或 curl）”后，能自动请求页面、分析结构、编写并验证可用规则。
+本文档用于让 AI 在拿到「搜索链接或 curl」后，请求页面、分析结构、编写并验证纸鸢磁力引擎规则。
 
-如果只想快速新增一个引擎，优先看：
-
-- “最小可用模板”
-- “stepConfig 结构”
-- “常见失败与修复”
-
-说明：
-
-- 本文档是规则规范说明
-- `exmple_rule_20260604.json` 是更接近真实落地的参考样例
-- 新增规则时，字段组织建议以样例为准，字段含义以本文档为准
+- 字段含义以本文档为准
+- 完整样例见同目录 `examples/regulars-sample-*.json`
 
 ## 1. 文件作用与顶层结构
 
-规则文件路径：`migrate-backup/regulars.json`
+规则为 JSON 文件，在纸鸢磁力 **【我的规则】** 中导入；开发仓库中常见路径为 `regulars.json`（单文件内 `regulars` 数组）。
 
 顶层结构：
 
@@ -326,7 +317,7 @@
 ## 8. 快速模板（可直接复制给 AI）
 
 ```text
-请在 migrate-backup/regulars.json 新增引擎规则，要求：
+请在 regulars.json（或用户指定的规则文件）的 regulars 数组中新增引擎，要求：
 1) 用我提供的 URL/curl 自动请求页面；
 2) 自动分析 listPointer、itemFields、分页和排序；
 3) 若列表无磁链，自动配置 nextStep 进详情页取 magnet；

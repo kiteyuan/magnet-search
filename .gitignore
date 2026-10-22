@@ -1,0 +1,4 @@
+.DS_Store
+desktop/
+**/node_modules/
+**/target/
